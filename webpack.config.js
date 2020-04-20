@@ -30,7 +30,17 @@ module.exports = {
         // ローダーの処理対象となるディレクトリ
         include: path.resolve(__dirname, 'src/images'),
         // 利用するローダー
-        loader: 'url-loader'
+        loader: 'url-loader',
+        options: {
+          // 8KB以上は DataURL に変換せずに出力
+          limit: 8192,
+          // 出力する DataURL に変換しなかった画像の名前
+          name: '[name].[ext]',
+          // DataURL に変換しなかった画像の出力先
+          outputPath: '../images/',
+          // 出力されるファイルからの画像の読込先
+          publicPath: path => './images/' + path
+        }
       }
     ]
   }
