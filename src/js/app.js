@@ -1,1 +1,2 @@
-document.querySelector('body').innerText = 'Hello webpack!!';
+document.body.innerText = 'Hello webpack!!';
+console.log(msg);
