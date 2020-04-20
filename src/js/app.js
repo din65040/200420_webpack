@@ -9,3 +9,15 @@ const salesTax = 1.08;
 const priceIncludeTax = tax(totalPrice, salesTax);
 
 $('body').text(priceIncludeTax);
+
+console.log('console');
+
+// ---
+// import {add, sub as SUB} from './math.js'
+// add(1,2);
+// SUB(3,2);
+
+// ---
+// import * as math from './math.js'
+// math.add(1,2);
+// math.sub(3,2);
