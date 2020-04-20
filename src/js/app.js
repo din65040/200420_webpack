@@ -1,1 +1,1 @@
-console.log('app');
+document.querySelector('body').innerText = 'Hello webpack!!';

@@ -12,6 +12,15 @@ module.exports = {
     // 出力するファイル名
     filename: '[name].bundle.js',
     // 出力先のパス（絶対パスを指定しないとエラーが出るので注意）
-    path: path.resolve(__dirname, 'public/js')
+    path: path.resolve(__dirname, 'public/js'),
+    // ブラウザから出力したファイルにアクセスする際のパス
+    publicPath: '/js/'
+  },
+  // webpack-dev-server の設定
+  devServer: {
+    open: true,
+    port: 9000,
+    // コンテンツのルートディレクトリ
+    contentBase: './public'
   }
 }
