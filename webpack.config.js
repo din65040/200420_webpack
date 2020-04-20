@@ -22,5 +22,7 @@ module.exports = {
     port: 9000,
     // コンテンツのルートディレクトリ
     contentBase: './public'
-  }
+  },
+  // ソースマップの設定
+  devtool: 'cheap-module-eval-sourve-map'
 }
