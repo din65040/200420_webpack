@@ -1,6 +1,6 @@
 const path = require('path');
 
-module.export = {
+module.exports = {
   mode: 'development',
   // エントリーポイントの設定
   entry: './src/js/app.js',
