@@ -1,3 +1,4 @@
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const path = require('path');
 
 module.exports = {
@@ -9,5 +10,9 @@ module.exports = {
     filename: 'bundle.js',
     // 出力先のパス（絶対パスを指定しないとエラーが出るので注意）
     path: path.resolve(__dirname, 'public/js')
-  }
+  },
+  plugins: [
+    // webpack-bundle-analyzer を利用する
+    new BundleAnalyzerPlugin()
+  ]
 }
