@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   watch: true,
-  mode: 'development',
+  mode: 'production',
   // エントリーポイントの設定
   entry: {
     app: './src/js/app.js',
