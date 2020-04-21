@@ -11,7 +11,9 @@
 
 ### モジュールのインストール
 
+```console
 $ npm install -D webpack webpack-cli
+```
 
 ### npm scripts に追加
 
