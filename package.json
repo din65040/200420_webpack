@@ -5,6 +5,7 @@
     "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
+    "build:big": "webpack --config webpack.not-optimized.config.js",
     "dev": "webpack --mode development --watch --hide-modules"
   },
   "repository": {
@@ -21,6 +22,7 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
-    "jquery": "^3.5.0"
+    "jquery": "^3.5.0",
+    "lodash-es": "^4.17.15"
   }
 }

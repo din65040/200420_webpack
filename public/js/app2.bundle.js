@@ -57,7 +57,7 @@
 /******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 	// Promise = chunk loading, 0 = chunk loaded
 /******/ 	var installedChunks = {
-/******/ 		"app": 0
+/******/ 		"app2": 0
 /******/ 	};
 /******/
 /******/ 	var deferredModules = [];
@@ -148,22 +148,22 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./src/js/app.js","vendor"]);
+/******/ 	deferredModules.push(["./src/js/app2.js","vendor"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/js/app.js":
-/*!***********************!*\
-  !*** ./src/js/app.js ***!
-  \***********************/
+/***/ "./src/js/app2.js":
+/*!************************!*\
+  !*** ./src/js/app2.js ***!
+  \************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash-es */ \"./node_modules/lodash-es/lodash.js\");\n\n\n\n// hello webpack app -> HELLO WEBPACK APP\nconst text = lodash_es__WEBPACK_IMPORTED_MODULE_1__[\"default\"].upperCase('hello webpack app');\njquery__WEBPACK_IMPORTED_MODULE_0___default()('body').html(text);\n\n//# sourceURL=webpack:///./src/js/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash-es */ \"./node_modules/lodash-es/lodash.js\");\n\n\n\n// hello webpack app -> HELLO WEBPACK APP\nconst text = lodash_es__WEBPACK_IMPORTED_MODULE_1__[\"default\"].upperCase('hello webpack app 2');\njquery__WEBPACK_IMPORTED_MODULE_0___default()('body').html(text);\n\n//# sourceURL=webpack:///./src/js/app2.js?");
 
 /***/ })
 

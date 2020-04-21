@@ -26,22 +26,4 @@ module.exports = {
   },
   // ソースマップの設定
   devtool: 'cheap-module-eval-sourve-map',
-  // optimization の設定
-  optimization: {
-    splitChunks: {
-      cacheGroups: {
-        // プロパティ名はなんでも良い 今回は vendor としている
-        vendor: {
-          // node_modules 配下のモジュールをバンドル対象とする
-          test: /node_modules/,
-          // 出力するファイル名
-          name: 'vendor',
-          // 今日つモジュールとしてバンドルする対象の設定
-          chunks: 'initial',
-          // これをtrueにすることで、デフォルト splitChunks の設定の splitChunk.miniSize, splitChunks.minChunks, splitChunks.maxAsyncRequest, splitChunks.maxInitialRequest を無効にできる
-          enforce: true
-        }
-      }
-    }
-  }
 }
